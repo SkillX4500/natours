@@ -1,0 +1,58 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Learning node, express and MongoDB",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "app.js",
+  "targets": {
+    "main": false
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "SET NODE_ENV=production&&nodemon server.js",
+    "debug": "ndb server.js",
+    "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js/dist",
+    "build:js": "parcel build ./public/js/index.js --dist-dir ./public/js/dist"
+  },
+  "author": "majedar",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.0.1",
+    "hpp": "^0.2.3",
+    "html-to-text": "^9.0.5",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.1",
+    "pug": "^3.0.2",
+    "regenerator-runtime": "^0.13.11",
+    "sharp": "^0.32.0",
+    "slugify": "^1.6.5",
+    "stripe": "^12.4.0",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.0",
+    "ndb": "^1.1.5",
+    "nodemon": "^2.0.20",
+    "parcel": "^2.8.3",
+    "prettier": "^2.8.3"
+  }
+}
