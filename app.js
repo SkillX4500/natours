@@ -2,6 +2,7 @@ const path = require('path');
 
 const express = require('express');
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
@@ -105,6 +106,9 @@ app.use(
     ],
   })
 );
+
+// compresses texts
+app.use(compression());
 
 // ROUTES
 app.use('/', viewRouter);

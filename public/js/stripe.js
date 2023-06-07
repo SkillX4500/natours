@@ -7,7 +7,7 @@ export const bookTour = async tourId => {
     // get checkout session
     const session = await axios({
       method: 'post',
-      url: `http://localhost:3000/api/v1/booking/checkout-session/${tourId}`,
+      url: `/api/v1/booking/checkout-session/${tourId}`,
     });
 
     // create checkout form + charge credit card
