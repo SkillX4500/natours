@@ -1,3 +1,3 @@
 # Natours Application
 
-Built using NodeJS, ExpressJS, Mongoose, MongoDB
+Built using NodeJS, ExpressJS, Mongoose, MongoDB.
